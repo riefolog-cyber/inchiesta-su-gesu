@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inchiesta su Gesù — fascicolo storico interattivo</title>
+  <meta name="description" content="Percorso didattico interattivo per la scuola secondaria di secondo grado: fonti, archeologia, scienza, processo e dibattito sul Gesù storico.">
+  <meta name="author" content="Riefolo Giovanni">
+  <meta name="theme-color" content="#211f1a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="Inchiesta su Gesù, torna all'inizio">
+        <span class="brand__mark" aria-hidden="true">IG</span>
+        <span class="brand__text">
+          <strong>Inchiesta su Gesù</strong>
+          <small>fascicolo didattico</small>
+        </span>
+      </a>
+
+      <nav class="toc" id="toc" aria-label="Sezioni del fascicolo">
+        <a href="#metodo">Metodo</a>
+        <a href="#fonti">Fonti</a>
+        <a href="#atlante">Atlante</a>
+        <a href="#scienza">Scienza</a>
+        <a href="#processo">Processo</a>
+        <a href="#dibattito">Dibattito</a>
+        <a href="#ritratto">Ritratto</a>
+        <a href="#autovalutazione">Quiz</a>
+        <a href="#docente">Docente</a>
+      </nav>
+
+      <div class="topbar__tools">
+        <a class="progress-chip" href="#ritratto" aria-label="Indizi raccolti nel faldone">
+          <span class="progress-chip__dot" aria-hidden="true"></span>
+          <span class="progress-chip__label">Faldone</span>
+          <strong><span id="progress-count">0</span>/<span id="progress-total">11</span></strong>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="toc">
+          <span class="menu-toggle__lines" aria-hidden="true"></span>
+          <span class="visually-hidden">Apri il menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="kicker reveal">Fascicolo investigativo · Storia · Religione · Filosofia · Educazione civica</p>
+          <h1 class="hero__title reveal">Inchiesta<br><em>su</em> Gesù</h1>
+          <p class="hero__author reveal">Realizzato dal prof. <strong>Riefolo Giovanni</strong>, docente IRC al IIS Ferrari Fermi di Verona</p>
+          <p class="hero__lead reveal">Non una risposta da imparare. Un caso da istruire.</p>
+          <p class="hero__intro reveal">Un ebreo galileo del I secolo. Quattro Vangeli, poche tracce romane, tombe, papiri, isotopi e secoli di interpretazioni. Il tuo compito: separare ciò che le fonti permettono di dire da ciò che appartiene alla fede, alla tradizione o alla leggenda.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#metodo">Apri il fascicolo <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#ritratto">Vai al ritratto finale</a>
+          </div>
+          <dl class="hero__facts reveal">
+            <div><dt>Fonti</dt><dd>10 schede</dd></div>
+            <div><dt>Tavole</dt><dd>8 immagini</dd></div>
+            <div><dt>Indizi</dt><dd>11 traguardi</dd></div>
+            <div><dt>Percorso</dt><dd>5–6 ore</dd></div>
+          </dl>
+        </div>
+
+        <aside class="case-file reveal" aria-label="Scheda del caso">
+          <div class="case-file__tab">Fascicolo didattico · Storia antica</div>
+          <div class="mugshot">
+            <svg viewBox="0 0 300 330" role="img" aria-label="Silhouette schematica di un uomo del I secolo, con linee di misurazione. Nessun ritratto fisico è disponibile nelle fonti.">
+              <rect x="8" y="8" width="284" height="314" fill="none" stroke="currentColor" stroke-opacity=".25"/>
+              <g fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M150 58c-37 0-63 29-63 69 0 26 10 45 25 57-9 10-15 23-17 37l-4 43h118l-4-43c-2-14-8-27-17-37 15-12 25-31 25-57 0-40-26-69-63-69Z"/>
+                <path d="M111 132c11-8 24-12 39-12s28 4 39 12"/>
+                <path d="M150 58v-18M150 272v18M87 127h-18M213 127h18" stroke-dasharray="3 4"/>
+                <circle cx="150" cy="76" r="3" fill="currentColor" stroke="none"/>
+                <circle cx="150" cy="127" r="3" fill="currentColor" stroke="none"/>
+                <circle cx="150" cy="214" r="3" fill="currentColor" stroke="none"/>
+              </g>
+              <g fill="currentColor" font-family="'Courier New', monospace" font-size="9" letter-spacing=".08em">
+                <text x="18" y="34">RITRATTO COEVO</text>
+                <text x="18" y="47">NON DISPONIBILE</text>
+                <text x="226" y="127">≈ 30 anni</text>
+                <text x="18" y="308">altezza media · corporatura robusta</text>
+              </g>
+              <g stroke="currentColor" stroke-opacity=".55" stroke-width="2">
+                <path d="M18 18h34M18 18v34M282 18h-34M282 18v34M18 312h34M18 312v-34M282 312h-34M282 312v-34" fill="none"/>
+              </g>
+            </svg>
+            <span class="stamp stamp--hero" aria-hidden="true">Caso aperto</span>
+          </div>
+          <dl class="case-file__data">
+            <div><dt>Oggetto</dt><dd>identificazione storica di Yehoshua bar Yosef</dd></div>
+            <div><dt>Origine</dt><dd>Nazaret, Galilea</dd></div>
+            <div><dt>Epoca</dt><dd>I secolo d.C., sotto Tiberio</dd></div>
+            <div><dt>Fonti</dt><dd>Paolo · Vangeli · Flavio Giuseppe · Tacito · archeologia</dd></div>
+            <div><dt>Accusa</dt><dd>“Re dei Giudei” — sedizione?</dd></div>
+            <div><dt>Esito</dt><dd>crocifissione sotto Ponzio Pilato</dd></div>
+            <div><dt>Stato</dt><dd><strong>aperto</strong> — molte domande restano</dd></div>
+          </dl>
+          <p class="case-file__note">“Non cerchiamo un volto. Cerchiamo ciò che possiamo dire, e con quanta certezza.”</p>
+        </aside>
+      </div>
+      <div class="hero__watermark" aria-hidden="true">IESVS</div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Fonti primarie</span><span>Archeologia</span><span>Radiocarbonio</span><span>Papiri</span><span>Giuseppe Flavio</span><span>Tacito</span><span>Sindone</span><span>Talpiot</span><span>Metodo storico</span><span>Lavoro in classe</span>
+        <span>Fonti primarie</span><span>Archeologia</span><span>Radiocarbonio</span><span>Papiri</span><span>Giuseppe Flavio</span><span>Tacito</span><span>Sindone</span><span>Talpiot</span><span>Metodo storico</span><span>Lavoro in classe</span>
+      </div>
+    </div>
+
+    <!-- METODO -->
+    <section class="section" id="metodo" aria-labelledby="metodo-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">00</p>
+          <div>
+            <p class="eyebrow">Il metodo</p>
+            <h2 id="metodo-title">Prima di cercare Gesù, impara a cercare.</h2>
+            <p class="section__lead">La domanda non è «ci credi?». La domanda è: che cosa possiamo sapere, e con quale grado di certezza?</p>
+          </div>
+        </header>
+
+        <div class="method-grid">
+          <article class="method-card reveal">
+            <span class="method-card__num">01</span>
+            <h3>Una fonte non è una prova</h3>
+            <p>Un Vangelo, un’iscrizione, un ossuario: ogni traccia ha un autore, una data, un pubblico e un interesse. Prima di citarla, chiediti chi la scrive e perché.</p>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-card__num">02</span>
+            <h3>Tre livelli, non uno</h3>
+            <p>Confondere <strong>fatto</strong>, <strong>indizio</strong> e <strong>interpretazione</strong> è l’errore più comune. Il fascicolo userà sempre queste tre etichette.</p>
+            <ul class="tag-list" aria-label="I tre livelli">
+              <li class="tag tag--fact">Fatto</li>
+              <li class="tag tag--clue">Indizio</li>
+              <li class="tag tag--interp">Interpretazione</li>
+            </ul>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-card__num">03</span>
+            <h3>Anche il silenzio è un dato</h3>
+            <p>Se una fonte non parla di Gesù, non significa automaticamente che non sia esistito. Significa che per quell’autore, in quel contesto, non era rilevante — o che non ne sapeva abbastanza.</p>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-card__num">04</span>
+            <h3>Due registri, stesso rispetto</h3>
+            <p>Lo storico ricostruisce ciò che le fonti permettono; il credente confessa ciò che va oltre. Nessuno dei due registri va usato per zittire l’altro.</p>
+          </article>
+        </div>
+
+        <div class="workbench reveal" id="metodo-game">
+          <div class="workbench__head">
+            <p class="eyebrow">Prova tu · banco di lavoro</p>
+            <h3>Fatto, indizio o interpretazione?</h3>
+            <p>Classifica le tre affermazioni. Non è un esame: serve a calibrare lo sguardo. Puoi correggerti.</p>
+          </div>
+
+          <div class="claim-class" data-answer="fatto" data-claim="pilato">
+            <p class="claim-class__text">“Ponzio Pilato fu prefetto della Giudea.”</p>
+            <div class="claim-class__actions" role="group" aria-label="Classifica la prima affermazione">
+              <button type="button" data-choice="fatto">Fatto</button>
+              <button type="button" data-choice="indizio">Indizio</button>
+              <button type="button" data-choice="interpretazione">Interpretazione</button>
+            </div>
+            <p class="claim-class__feedback" hidden></p>
+          </div>
+
+          <div class="claim-class" data-answer="indizio" data-claim="condanna">
+            <p class="claim-class__text">“Gesù fu condannato a morte da Pilato.”</p>
+            <div class="claim-class__actions" role="group" aria-label="Classifica la seconda affermazione">
+              <button type="button" data-choice="fatto">Fatto</button>
+              <button type="button" data-choice="indizio">Indizio</button>
+              <button type="button" data-choice="interpretazione">Interpretazione</button>
+            </div>
+            <p class="claim-class__feedback" hidden></p>
+          </div>
+
+          <div class="claim-class" data-answer="interpretazione" data-claim="figlio">
+            <p class="claim-class__text">“Gesù è il Figlio di Dio.”</p>
+            <div class="claim-class__actions" role="group" aria-label="Classifica la terza affermazione">
+              <button type="button" data-choice="fatto">Fatto</button>
+              <button type="button" data-choice="indizio">Indizio</button>
+              <button type="button" data-choice="interpretazione">Interpretazione</button>
+            </div>
+            <p class="claim-class__feedback" hidden></p>
+          </div>
+
+          <p class="workbench__foot">La distinzione non dice che la fede sia falsa. Dice che non è una prova empirica.</p>
+        </div>
+
+        <figure class="plate plate--wide reveal">
+          <button class="plate__media" type="button" data-plate="salvator-mundi" data-full="assets/plates/salvator-mundi.webp" aria-label="Ingrandisci la tavola: Salvator Mundi">
+            <img src="assets/plates/salvator-mundi-640.webp" srcset="assets/plates/salvator-mundi-640.webp 640w, assets/plates/salvator-mundi.webp 1100w" sizes="(max-width: 720px) 100vw, 48vw" width="1100" height="1374" loading="lazy" decoding="async" alt="Riproduzione del Salvator Mundi, dipinto attribuito a Leonardo da Vinci: un uomo con lunghi capelli ricci, tunica e mano destra sollevata in gesto di benedizione.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 01 · Il volto che abbiamo in mente</p>
+            <h3>Un volto del Cinquecento, non del I secolo.</h3>
+            <p>Il <em>Salvator Mundi</em> è un dipinto attribuito a Leonardo, realizzato oltre mille anni dopo Gesù. È una delle immagini che hanno plasmato l’immaginario occidentale, ma non è un ritratto storico: le fonti antiche non descrivono il suo aspetto.</p>
+            <p class="plate__credit">Salvator Mundi, 1505–1515, attribuito a Leonardo da Vinci. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> l’aspetto fisico di Gesù. È un’immagine devozionale e artistica, non una fotografia.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FONTI -->
+    <section class="section section--paper" id="fonti" aria-labelledby="fonti-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">01</p>
+          <div>
+            <p class="eyebrow">Le fonti</p>
+            <h2 id="fonti-title">Quattro Vangeli non sono quattro telecamere.</h2>
+            <p class="section__lead">Nessun autore antico scrive una biografia nel senso moderno. I Vangeli sono racconti teologici, scritti decenni dopo, in comunità che interpretano la memoria di Gesù.</p>
+          </div>
+        </header>
+
+        <div class="source-tools reveal">
+          <div class="filters" role="group" aria-label="Filtra le fonti">
+            <button type="button" class="filter is-active" data-filter="tutte" aria-pressed="true">Tutte</button>
+            <button type="button" class="filter" data-filter="cristiane" aria-pressed="false">Cristiane</button>
+            <button type="button" class="filter" data-filter="non-cristiane" aria-pressed="false">Non cristiane</button>
+            <button type="button" class="filter" data-filter="apocrife" aria-pressed="false">Apocrife</button>
+            <button type="button" class="filter" data-filter="archeologia" aria-pressed="false">Archeologia</button>
+          </div>
+          <p class="source-tools__hint">Apri almeno <strong>4 schede</strong> per acquisire l’indizio “pluralità delle fonti”.</p>
+        </div>
+
+        <div class="source-grid" id="source-grid">
+          <article class="source-card" data-cat="cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-paolo">
+              <span class="source-card__date">50–60 d.C.</span>
+              <span class="source-card__title">Lettere di Paolo</span>
+              <span class="source-card__meta">cristiane · lettere · greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-paolo" hidden>
+              <p>Le lettere autentiche (1 Tessalonicesi, Galati, Romani…) sono i testi cristiani più antichi, scritti negli anni 50. Non raccontano la vita di Gesù: parlano della sua morte, della risurrezione e del significato per le comunità. Citano un “fratello del Signore” e una comunità a Gerusalemme.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>La testimonianza scritta più antica del culto di Gesù.</dd></div>
+                <div><dt>Limite</dt><dd>Non è una biografia e non descrive miracoli o insegnamenti in modo sistematico.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-marco">
+              <span class="source-card__date">65–70 d.C.</span>
+              <span class="source-card__title">Vangelo di Marco</span>
+              <span class="source-card__meta">cristiane · vangelo · greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-marco" hidden>
+              <p>Scritto intorno al 65–70, è il Vangelo più breve. Non ha racconti di nascita; inizia con il battesimo e finisce, nella versione più antica, con il sepolcro vuoto e la fuga delle donne. È la base di Matteo e Luca.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Una narrazione continua della passione e della morte, con dettagli vividi.</dd></div>
+                <div><dt>Limite</dt><dd>Scritto a decenni di distanza, in un contesto di guerra e attese apocalittiche.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-matteo-luca">
+              <span class="source-card__date">80–90 d.C.</span>
+              <span class="source-card__title">Matteo e Luca</span>
+              <span class="source-card__meta">cristiane · vangeli · greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-matteo-luca" hidden>
+              <p>Scritti tra 80 e 90, riprendono Marco e una fonte di detti (Q). Aggiungono genealogie e racconti di nascita diversi tra loro. Matteo insiste sul compimento delle Scritture; Luca scrive per un pubblico più ampio e mette al centro i poveri e gli esclusi.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Due riletture della tradizione di Marco, con materiale proprio.</dd></div>
+                <div><dt>Limite</dt><dd>I racconti dell’infanzia non coincidono e riflettono teologie diverse.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-giovanni">
+              <span class="source-card__date">90–100 d.C.</span>
+              <span class="source-card__title">Vangelo di Giovanni</span>
+              <span class="source-card__meta">cristiane · vangelo · greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-giovanni" hidden>
+              <p>Composto tra 90 e 100, è il Vangelo più teologico: lunghi discorsi, segni, il Verbo preesistente. Racconta la Pasqua con una cronologia diversa dai Sinottici e include episodi assenti negli altri.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Una teologia matura e una forte riflessione sull’identità di Gesù.</dd></div>
+                <div><dt>Limite</dt><dd>È il più lontano nel tempo e il più rielaborato; non è una cronaca.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="non-cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-flavio">
+              <span class="source-card__date">93–94 d.C.</span>
+              <span class="source-card__title">Giuseppe Flavio</span>
+              <span class="source-card__meta">non cristiane · storia · greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-flavio" hidden>
+              <p>Storico ebreo al servizio di Roma, scrive le <em>Antichità giudaiche</em> nel 93–94. Il passo su Gesù (<span lang="la">Testimonium Flavianum</span>) è tramandato con aggiunte cristiane; gli studiosi discutono quanto fosse originario. Il riferimento a Giacomo, “fratello di Gesù”, è più spesso considerato autentico.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Uno sguardo non cristiano sulla Palestina del I secolo e su figure come Pilato e Giovanni Battista.</dd></div>
+                <div><dt>Limite</dt><dd>Il testo su Gesù è stato copiato e ritoccato da scribi cristiani.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="non-cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-tacito">
+              <span class="source-card__date">≈ 115 d.C.</span>
+              <span class="source-card__title">Tacito</span>
+              <span class="source-card__meta">non cristiane · storia · latino</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-tacito" hidden>
+              <p>Negli <em>Annali</em> (XV.44), intorno al 115, racconta la persecuzione neroniana e nomina “Cristo”, messo a morte da Pilato sotto Tiberio. Non è una fonte cristiana: chiama il cristianesimo una “superstizione perniciosa”. Conferma indirettamente il nucleo della condanna.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Una menzione romana indipendente della morte di Cristo sotto Pilato.</dd></div>
+                <div><dt>Limite</dt><dd>Non fornisce dettagli sulla vita di Gesù e scrive quasi un secolo dopo.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="non-cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-plinio">
+              <span class="source-card__date">≈ 112 d.C.</span>
+              <span class="source-card__title">Plinio il Giovane</span>
+              <span class="source-card__meta">non cristiane · lettere · latino</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-plinio" hidden>
+              <p>Governatore in Bitinia, scrive a Traiano intorno al 112. Descrive i cristiani che si riuniscono prima dell’alba e cantano inni “a Cristo come a un dio”. Non parla della vita di Gesù: documenta la diffusione del culto.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Una prova esterna della rapida diffusione del culto di Cristo.</dd></div>
+                <div><dt>Limite</dt><dd>Non è una fonte sulla biografia di Gesù.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="non-cristiane">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-talmud">
+              <span class="source-card__date">V–VI secolo</span>
+              <span class="source-card__title">Talmud babilonese</span>
+              <span class="source-card__meta">non cristiane · tradizione rabbinica</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-talmud" hidden>
+              <p><em>Sanhedrin</em> 43a menziona “Yeshu” e la sua condanna alla vigilia di Pasqua. Il testo è molto più tardo, polemico e non indipendente dai Vangeli. Va letto come traccia della memoria ebraica di Gesù, non come verbale.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Una memoria ebraica della figura di Gesù, filtrata da secoli di polemiche.</dd></div>
+                <div><dt>Limite</dt><dd>Non è una testimonianza oculare e non ha valore di documento processuale.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="apocrife">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-apocrifi">
+              <span class="source-card__date">II–IV secolo</span>
+              <span class="source-card__title">Vangeli apocrifi</span>
+              <span class="source-card__meta">apocrife · vangeli · copto/greco</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-apocrifi" hidden>
+              <p>Vangeli di Tommaso, Maria, Giuda e altri testi, spesso del II–IV secolo, trovati a Nag Hammadi nel 1945. Offrono teologie diverse e dettagli fantastici; non sono resoconti oculari più antichi. La Chiesa li escluse dal canone, ma sono fonti preziose per la storia delle comunità cristiane.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>La pluralità delle prime interpretazioni di Gesù.</dd></div>
+                <div><dt>Limite</dt><dd>Sono spesso più tardi dei Vangeli canonici e riflettono dibattiti teologici successivi.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="source-card" data-cat="archeologia">
+            <button class="source-card__toggle" type="button" aria-expanded="false" aria-controls="src-archeologia">
+              <span class="source-card__date">1961–oggi</span>
+              <span class="source-card__title">Archeologia</span>
+              <span class="source-card__meta">archeologia · epigrafi · ossuari</span>
+              <span class="source-card__plus" aria-hidden="true">+</span>
+            </button>
+            <div class="source-card__panel" id="src-archeologia" hidden>
+              <p>Iscrizioni, ossuari, sinagoghe, case e tombe illuminano il mondo di Gesù. La Pietra di Pilato (Cesarea, 1961), l’ossuario di Caifa, il calcagno crocifisso di Yehohanan: nessuno “prova” la risurrezione, ma confermano contesti e pratiche.</p>
+              <dl>
+                <div><dt>Cosa offre</dt><dd>Dati materiali su luoghi, istituzioni e costumi del I secolo.</dd></div>
+                <div><dt>Limite</dt><dd>L’archeologia raramente nomina persone comuni; non è una macchina della verità.</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-block reveal">
+          <div class="timeline-block__head">
+            <h3>La linea del tempo delle fonti</h3>
+            <p>L’evento è intorno al 30–33. La prima testimonianza scritta arriva almeno vent’anni dopo. Clicca un momento per leggere cosa aggiunge — e cosa non può dire.</p>
+          </div>
+          <div class="timeline" id="timeline" role="group" aria-label="Cronologia delle fonti"></div>
+          <div class="timeline-note" id="timeline-note" aria-live="polite">
+            <p class="timeline-note__empty">Seleziona un momento della linea del tempo.</p>
+          </div>
+          <p class="timeline-block__foot">Apri almeno <strong>5 momenti</strong> per acquisire l’indizio “cronologia”.</p>
+        </div>
+
+        <figure class="plate plate--reverse reveal">
+          <button class="plate__media" type="button" data-plate="giotto-bacio" data-full="assets/plates/giotto-bacio.webp" aria-label="Ingrandisci la tavola: Bacio di Giuda di Giotto">
+            <img src="assets/plates/giotto-bacio-640.webp" srcset="assets/plates/giotto-bacio-640.webp 640w, assets/plates/giotto-bacio.webp 1100w" sizes="(max-width: 720px) 100vw, 45vw" width="1100" height="1374" loading="lazy" decoding="async" alt="Affresco di Giotto con il bacio di Giuda: due figure vicine in un paesaggio scuro, una bacia l’altra mentre attorno si muovono altre persone.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 02 · Immagini della Passione</p>
+            <h3>Il bacio che racconta il tradimento.</h3>
+            <p>Giotto, <em>Bacio di Giuda</em>, Cappella degli Scrovegni, 1304–1306. L’affresco costruisce la scena con un linguaggio nuovo: è una fonte per la storia dell’arte e della devozione, non un verbale del processo.</p>
+            <p class="plate__credit">Giotto, Bacio di Giuda, 1304–1306, Padova. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> il dettaglio storico del tradimento. È una rappresentazione teologica.</p>
+          </figcaption>
+        </figure>
+
+        <div class="callout callout--dark reveal" role="note" aria-label="Cosa manca nelle fonti">
+          <p class="eyebrow">Ciò che manca</p>
+          <p>Non abbiamo un ritratto fisico, un atto di nascita, un verbale del processo, un testo scritto da Gesù. Chi promette queste prove sta vendendo una certezza che le fonti non danno.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATLANTE -->
+    <section class="section" id="atlante" aria-labelledby="atlante-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">02</p>
+          <div>
+            <p class="eyebrow">Atlante</p>
+            <h2 id="atlante-title">La geografia del caso.</h2>
+            <p class="section__lead">Gesù non è un’idea senza luogo. Villaggi, strade, laghi e rovine aiutano a capire un predicatore itinerante della Galilea e della Giudea.</p>
+          </div>
+        </header>
+
+        <div class="atlas reveal">
+          <div class="atlas__map" id="atlas-map">
+            <svg class="map-svg" viewBox="0 0 800 560" role="img" aria-label="Mappa schematica della Galilea e della Giudea nel I secolo, con i luoghi principali.">
+              <defs>
+                <pattern id="desertDots" width="14" height="14" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1" fill="#8b7b5c" opacity=".35"/>
+                </pattern>
+                <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <line x1="0" y1="0" x2="0" y2="8" stroke="#6f7f79" stroke-width="1" opacity=".22"/>
+                </pattern>
+              </defs>
+              <rect width="800" height="560" fill="#e8dcc3"/>
+              <path d="M0 0h186c-18 70 18 118-6 176-22 53-6 92-28 138-19 40 2 78-20 118-12 22-18 48-14 78 4 18 8 34 6 50H0Z" fill="#b9c7c2"/>
+              <path d="M0 0h186c-18 70 18 118-6 176-22 53-6 92-28 138-19 40 2 78-20 118-12 22-18 48-14 78 4 18 8 34 6 50H0Z" fill="url(#hatch)"/>
+              <path d="M186 0c35 82 12 146 34 206 18 49 3 98 22 146 15 38 2 82 18 120 12 28 10 58 6 88" fill="none" stroke="#7d8d86" stroke-width="2" stroke-dasharray="6 7" opacity=".7"/>
+              <path d="M534 0c-14 64 18 108-4 160-22 50 10 92-10 142-16 40 8 82-8 122-10 24-8 44-4 64" fill="none" stroke="#6f8f94" stroke-width="7" opacity=".55"/>
+              <path d="M534 0c-14 64 18 108-4 160-22 50 10 92-10 142-16 40 8 82-8 122-10 24-8 44-4 64" fill="none" stroke="#dce6e3" stroke-width="2" opacity=".8"/>
+              <ellipse cx="600" cy="150" rx="38" ry="22" fill="#8fa9aa" stroke="#5e7878" stroke-width="2"/>
+              <path d="M570 393c30-18 62-8 84 8 18 14 12 34-6 44-24 12-58 8-76-6-14-12-14-34-2-46Z" fill="#8fa9aa" stroke="#5e7878" stroke-width="2"/>
+              <path d="M0 470c94-14 170-4 248 18 68 18 132 10 192-10 80-28 154-20 228 6 46 16 88 16 132 6v70H0Z" fill="url(#desertDots)" opacity=".75"/>
+              <g fill="none" stroke="#8a7654" stroke-width="1.4" stroke-dasharray="3 6" opacity=".65">
+                <path d="M250 310c60-24 122-34 180-52 46-14 82-26 120-48"/>
+                <path d="M500 240c-10 44-12 86-8 128"/>
+                <path d="M480 390c50-8 96-8 140 2"/>
+                <path d="M600 172c-30 18-58 38-90 66"/>
+              </g>
+              <g fill="#5b5344" font-family="'Courier New', monospace" font-size="15" letter-spacing=".18em" opacity=".72">
+                <text x="280" y="168">GALILEA</text>
+                <text x="318" y="340">SAMARIA</text>
+                <text x="360" y="472">GIUDEA</text>
+                <text x="664" y="258">DECAPOLI</text>
+                <text x="54" y="300" transform="rotate(-90 54 300)">MARE MEDITERRANEO</text>
+              </g>
+              <g fill="#5b5344" font-family="'Courier New', monospace" font-size="11" opacity=".7">
+                <text x="646" y="154">MAR DI GALILEA</text>
+                <text x="650" y="452">MAR MORTO</text>
+                <text x="560" y="330" transform="rotate(76 560 330)">GIORDANO</text>
+              </g>
+              <g transform="translate(716 54)" stroke="#5b5344" fill="#5b5344" opacity=".8">
+                <circle r="24" fill="none" stroke-width="1"/>
+                <path d="M0-30V30M-30 0H30" stroke-width="1"/>
+                <path d="M0-30l-6 12h12Z"/>
+                <text x="-3" y="-36" font-family="'Courier New', monospace" font-size="11" fill="#5b5344" stroke="none">N</text>
+              </g>
+              <g transform="translate(42 522)" font-family="'Courier New', monospace" font-size="10" fill="#5b5344" opacity=".8">
+                <path d="M0 0h90" stroke="#5b5344" stroke-width="1"/>
+                <path d="M0-4v8M45-4v8M90-4v8" stroke="#5b5344"/>
+                <text x="0" y="18">0</text><text x="38" y="18">25 km</text><text x="78" y="18">50</text>
+              </g>
+            </svg>
+
+            <button class="pin" type="button" style="--x:62;--y:43" data-place="nazaret" aria-label="Nazaret">
+              <span class="pin__dot" aria-hidden="true">1</span><span class="pin__label">Nazaret</span>
+            </button>
+            <button class="pin" type="button" style="--x:75;--y:27" data-place="cafarnao" aria-label="Cafarnao">
+              <span class="pin__dot" aria-hidden="true">2</span><span class="pin__label">Cafarnao</span>
+            </button>
+            <button class="pin" type="button" style="--x:31;--y:55" data-place="cesarea" aria-label="Cesarea Marittima">
+              <span class="pin__dot" aria-hidden="true">3</span><span class="pin__label">Cesarea</span>
+            </button>
+            <button class="pin" type="button" style="--x:60;--y:70" data-place="gerusalemme" aria-label="Gerusalemme">
+              <span class="pin__dot" aria-hidden="true">4</span><span class="pin__label">Gerusalemme</span>
+            </button>
+            <button class="pin" type="button" style="--x:48;--y:79" data-place="betlemme" aria-label="Betlemme">
+              <span class="pin__dot" aria-hidden="true">5</span><span class="pin__label">Betlemme</span>
+            </button>
+            <button class="pin" type="button" style="--x:78;--y:70" data-place="qumran" aria-label="Qumran">
+              <span class="pin__dot" aria-hidden="true">6</span><span class="pin__label">Qumran</span>
+            </button>
+            <button class="pin" type="button" style="--x:78;--y:81" data-place="masada" aria-label="Masada">
+              <span class="pin__dot" aria-hidden="true">7</span><span class="pin__label">Masada</span>
+            </button>
+          </div>
+
+          <div class="atlas__panel" id="place-panel" aria-live="polite">
+            <p class="eyebrow" id="place-kicker">Scheda luogo</p>
+            <h3 id="place-name">Seleziona un luogo</h3>
+            <p id="place-why">Clicca un numero sulla mappa. Ogni luogo aggiunge un pezzo di contesto — e un limite da ricordare.</p>
+            <p id="place-today"></p>
+            <p class="place-meta" id="place-caution"></p>
+            <ul class="atlas__progress" id="atlas-progress" aria-label="Luoghi visitati"></ul>
+          </div>
+        </div>
+        <p class="atlas__hint">Visita tutti i <strong>7 luoghi</strong> per acquisire l’indizio “atlante”.</p>
+
+        <figure class="plate plate--wide plate--reverse reveal">
+          <button class="plate__media" type="button" data-plate="porta-damasco" data-full="assets/plates/porta-damasco.webp" aria-label="Ingrandisci la tavola: Porta di Damasco a Gerusalemme">
+            <img src="assets/plates/porta-damasco-640.webp" srcset="assets/plates/porta-damasco-640.webp 640w, assets/plates/porta-damasco.webp 863w" sizes="(max-width: 720px) 100vw, 42vw" width="863" height="1540" loading="lazy" decoding="async" alt="Fotografia della Porta di Damasco a Gerusalemme, con una strada, archi e resti di una porta romana.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 03 · Gerusalemme</p>
+            <h3>La città che è stata più città.</h3>
+            <p>La Porta di Damasco conserva resti di una porta romana del 130 d.C. circa. La Gerusalemme di Gesù è sepolta sotto secoli di ricostruzioni: le pietre visibili non sono quelle del I secolo, ma aiutano a immaginare il contesto.</p>
+            <p class="plate__credit">Porta di Damasco, Gerusalemme. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> i racconti evangelici. Un luogo reale non è una prova documentaria.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SCIENZA -->
+    <section class="section section--paper" id="scienza" aria-labelledby="scienza-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">03</p>
+          <div>
+            <p class="eyebrow">Scienza e reperti</p>
+            <h2 id="scienza-title">La scienza non decide la fede. Ma può smontare una prova falsa.</h2>
+            <p class="section__lead">Quattro casi che finiscono spesso sui social: Sindone, stella di Betlemme, tomba di Talpiot, crocifissione. Che cosa dicono davvero le analisi?</p>
+          </div>
+        </header>
+
+        <div class="lab reveal">
+          <div class="lab__tabs" role="tablist" aria-label="Reperti da analizzare">
+            <button type="button" role="tab" id="tab-sindone" aria-selected="true" aria-controls="panel-sindone" data-tab="sindone">Sindone</button>
+            <button type="button" role="tab" id="tab-stella" aria-selected="false" aria-controls="panel-stella" data-tab="stella" tabindex="-1">Stella di Betlemme</button>
+            <button type="button" role="tab" id="tab-talpiot" aria-selected="false" aria-controls="panel-talpiot" data-tab="talpiot" tabindex="-1">Tomba di Talpiot</button>
+            <button type="button" role="tab" id="tab-croce" aria-selected="false" aria-controls="panel-croce" data-tab="croce" tabindex="-1">Crocifissione</button>
+          </div>
+
+          <div class="lab__panel" role="tabpanel" id="panel-sindone" aria-labelledby="tab-sindone">
+            <div class="lab__intro">
+              <div>
+                <p class="eyebrow">Reperto 01 · Torino</p>
+                <h3>La Sindone</h3>
+                <p>Un telo di lino lungo circa 4,4 metri, conservato a Torino. Mostra un’immagine frontale e dorsale di un uomo flagellato e crocifisso.</p>
+              </div>
+              <div class="lab__facts">
+                <h4>Cosa sappiamo</h4>
+                <ul>
+                  <li>Nel 1988 tre laboratori indipendenti hanno datato al radiocarbonio un campione: <strong>1260–1390</strong> (95%).</li>
+                  <li>L’origine dell’immagine è ancora discussa: per molti studiosi non è una semplice pittura.</li>
+                  <li>La catena di custodia fino a Gesù non è documentata.</li>
+                </ul>
+              </div>
+            </div>
+            <p class="lab__caution"><strong>Attenzione:</strong> le critiche al campionamento non hanno prodotto una datazione alternativa accettata dalla comunità scientifica. “Inspiegato” non significa “soprannaturale”.</p>
+            <div class="claims" data-lab="sindone">
+              <div class="claim-check" data-claim="sindone-data" data-correct="fatto">
+                <p>La datazione radiocarbonio del 1988 colloca il telo tra il XIII e il XIV secolo.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla datazione della Sindone">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+              <div class="claim-check" data-claim="sindone-risurrezione" data-correct="interpretazione">
+                <p>L’immagine sulla Sindone prova la risurrezione.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla risurrezione">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab__panel" role="tabpanel" id="panel-stella" aria-labelledby="tab-stella" hidden>
+            <div class="lab__intro">
+              <div>
+                <p class="eyebrow">Reperto 02 · cielo</p>
+                <h3>La stella di Betlemme</h3>
+                <p>Solo Matteo racconta dei magi guidati da una stella. Non indica una data, né descrive l’oggetto astronomico.</p>
+              </div>
+              <div class="lab__facts">
+                <h4>Ipotesi sul tavolo</h4>
+                <ul>
+                  <li>Congiunzione Giove–Saturno in Pesci nel <strong>7 a.C.</strong>.</li>
+                  <li>Cometa osservata dalle cronache cinesi nel <strong>5 a.C.</strong></li>
+                  <li>Supernova o fenomeno simbolico legato alle attese messianiche.</li>
+                </ul>
+              </div>
+            </div>
+            <p class="lab__caution"><strong>Attenzione:</strong> un fenomeno astronomico può spiegare il racconto, non dimostrare che sia avvenuto. La tradizione del 25 dicembre si afferma secoli dopo.</p>
+            <div class="claims" data-lab="stella">
+              <div class="claim-check" data-claim="stella-matteo" data-correct="fatto">
+                <p>Matteo è l’unico Vangelo canonico a parlare della stella e dei magi.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione su Matteo">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+              <div class="claim-check" data-claim="stella-congiunzione" data-correct="interpretazione">
+                <p>La congiunzione del 7 a.C. è la spiegazione certa della stella di Betlemme.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla congiunzione">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab__panel" role="tabpanel" id="panel-talpiot" aria-labelledby="tab-talpiot" hidden>
+            <div class="lab__intro">
+              <div>
+                <p class="eyebrow">Reperto 03 · Gerusalemme</p>
+                <h3>La tomba di Talpiot</h3>
+                <p>Nel 1980, a Talpiot, fu scavata una tomba del I secolo con ossuari. Alcuni nomi ricordano figure dei Vangeli.</p>
+              </div>
+              <div class="lab__facts">
+                <h4>Cosa sappiamo</h4>
+                <ul>
+                  <li>Dieci ossuari; iscrizioni come <em>Yeshua</em>, <em>Mariamene</em>, <em>Yose</em>.</li>
+                  <li>Il documentario del 2007 ha proposto che fosse la tomba della famiglia di Gesù.</li>
+                  <li>L’analisi statistica e l’identificazione dei nomi sono contestate.</li>
+                </ul>
+              </div>
+            </div>
+            <p class="lab__caution"><strong>Attenzione:</strong> i nomi erano comuni, la provenienza di alcuni pezzi non è documentata e manca una catena di prove. Non è il consenso degli archeologi.</p>
+            <div class="claims" data-lab="talpiot">
+              <div class="claim-check" data-claim="talpiot-tomba" data-correct="fatto">
+                <p>A Talpiot è stata trovata una tomba del I secolo con ossuari iscritti.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla tomba di Talpiot">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+              <div class="claim-check" data-claim="talpiot-famiglia" data-correct="interpretazione">
+                <p>La tomba di Talpiot è la tomba della famiglia di Gesù.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla famiglia di Gesù">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab__panel" role="tabpanel" id="panel-croce" aria-labelledby="tab-croce" hidden>
+            <div class="lab__intro">
+              <div>
+                <p class="eyebrow">Reperto 04 · Roma</p>
+                <h3>La crocifissione</h3>
+                <p>La crocifissione era una pena romana infamante, riservata a schiavi, ribelli e non cittadini. I Vangeli la descrivono con dettagli coerenti con la pratica.</p>
+              </div>
+              <div class="lab__facts">
+                <h4>Cosa sappiamo</h4>
+                <ul>
+                  <li>Il calcagno di Yehohanan (I secolo), trovato a Giv’at ha-Mivtar, conserva un chiodo.</li>
+                  <li>I condannati potevano essere legati o inchiodati; il <em>titulus</em> indicava la colpa.</li>
+                  <li>La causa della morte è discussa: asfissia, shock, trauma.</li>
+                </ul>
+              </div>
+            </div>
+            <p class="lab__caution"><strong>Attenzione:</strong> la pratica è documentata; questo non prova che Gesù sia stato crocifisso, ma rende la testimonianza plausibile e coerente con il contesto.</p>
+            <div class="claims" data-lab="croce">
+              <div class="claim-check" data-claim="croce-pratica" data-correct="fatto">
+                <p>La crocifissione era una pratica romana usata anche in Giudea.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla pratica romana">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+              <div class="claim-check" data-claim="croce-rivolta" data-correct="interpretazione">
+                <p>Il titulus “Re dei Giudei” prova che Gesù guidò una rivolta armata.</p>
+                <div class="claim-check__buttons" role="group" aria-label="Classifica l'affermazione sulla rivolta armata">
+                  <button type="button" data-choice="fatto">Fatto</button>
+                  <button type="button" data-choice="indizio">Indizio</button>
+                  <button type="button" data-choice="interpretazione">Interpretazione</button>
+                </div>
+                <p class="claim-check__feedback" hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="lab__hint">Classifica correttamente tutti gli <strong>8 enunciati</strong> per acquisire l’indizio “scienza e reperti”.</p>
+
+        <div class="plate-pair">
+          <figure class="plate plate--compact reveal">
+            <button class="plate__media" type="button" data-plate="sindone" data-full="assets/plates/sindone.webp" aria-label="Ingrandisci la tavola: la Sindone di Torino">
+              <img src="assets/plates/sindone-640.webp" srcset="assets/plates/sindone-640.webp 640w, assets/plates/sindone.webp 1500w" sizes="(max-width: 720px) 100vw, 45vw" width="1500" height="1206" loading="lazy" decoding="async" alt="Fotografia della Sindone di Torino distesa, con l’impronta di un corpo e il tessuto di lino visibile.">
+              <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+            </button>
+            <figcaption>
+              <p class="plate__num">Tavola 04 · Il reperto</p>
+              <h3>Un telo, un’immagine, una devozione.</h3>
+              <p>La Sindone è conservata a Torino. La datazione radiocarbonio del 1988 la colloca tra XIII e XIV secolo; l’origine dell’immagine è ancora discussa. La Chiesa non la considera una prova scientifica della risurrezione.</p>
+              <p class="plate__credit">Sindone di Torino. Uso didattico interno.</p>
+              <p class="plate__limit"><strong>Cosa non prova:</strong> l’identità dell’uomo, la risurrezione, la storicità dei Vangeli.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="plate plate--compact reveal">
+            <button class="plate__media" type="button" data-plate="talpiot" data-full="assets/plates/talpiot.webp" aria-label="Ingrandisci la tavola: gli ossuari di Talpiot">
+              <img src="assets/plates/talpiot-640.webp" srcset="assets/plates/talpiot-640.webp 640w, assets/plates/talpiot.webp 1500w" sizes="(max-width: 720px) 100vw, 45vw" width="1500" height="1065" loading="lazy" decoding="async" alt="Ossuari di pietra del I secolo con iscrizioni, disposti in una tomba o in una teca.">
+              <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+            </button>
+            <figcaption>
+              <p class="plate__num">Tavola 05 · Il reperto contestato</p>
+              <h3>Ossuari veri, una famiglia ipotetica.</h3>
+              <p>Gli ossuari di Talpiot sono reperti del I secolo con nomi comuni dell’epoca. L’ipotesi che la tomba appartenesse alla famiglia di Gesù è minoritaria: manca una catena di prove e i nomi non sono un’identificazione univoca.</p>
+              <p class="plate__credit">Ossuari di Talpiot, Gerusalemme. Uso didattico interno.</p>
+              <p class="plate__limit"><strong>Cosa non prova:</strong> che Gesù avesse una tomba familiare lì. L’identificazione è contestata.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <figure class="plate plate--wide reveal">
+          <button class="plate__media" type="button" data-plate="crocifissione" data-full="assets/plates/crocifissione.webp" aria-label="Ingrandisci la tavola: la crocifissione">
+            <img src="assets/plates/crocifissione-640.webp" srcset="assets/plates/crocifissione-640.webp 640w, assets/plates/crocifissione.webp 863w" sizes="(max-width: 720px) 100vw, 40vw" width="863" height="1913" loading="lazy" decoding="async" alt="Rappresentazione della crocifissione con chiodi e dettagli anatomici, accompagnata da annotazioni.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 06 · La pena</p>
+            <h3>La croce non era un simbolo: era una macchina di morte.</h3>
+            <p>La crocifissione era una pena romana infamante, riservata a schiavi, ribelli e non cittadini. Il calcagno di Yehohanan e le fonti confermano la pratica; l’iconografia, invece, è spesso costruita e anacronistica.</p>
+            <p class="plate__credit">Crocifissione, illustrazione storica. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> che Gesù sia stato crocifisso in quel modo. La pratica è documentata; i dettagli dell’immagine no.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section section--dark" id="processo" aria-labelledby="processo-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">04</p>
+          <div>
+            <p class="eyebrow">Il processo</p>
+            <h2 id="processo-title">Chi ha ucciso Gesù?</h2>
+            <p class="section__lead">La domanda è antica e pericolosa. Le fonti convergono su un punto, divergono su molti altri. Ricostruire non significa emettere una sentenza.</p>
+          </div>
+        </header>
+
+        <div class="trial reveal">
+          <article class="trial__q" data-trial="autorita">
+            <p class="trial__num">Domanda 01</p>
+            <h3>In Giudea, chi poteva autorizzare una condanna a morte?</h3>
+            <div class="trial__options" role="group" aria-label="Scegli la risposta sulla condanna a morte">
+              <button type="button" data-choice="sinedrio">Il Sinedrio</button>
+              <button type="button" data-choice="pilato">Il prefetto romano Pilato</button>
+              <button type="button" data-choice="erode">Erode Antipa</button>
+            </div>
+            <p class="trial__feedback" hidden></p>
+          </article>
+
+          <article class="trial__q" data-trial="titulus">
+            <p class="trial__num">Domanda 02</p>
+            <h3>Che cosa suggerisce il <em>titulus</em> “Re dei Giudei”?</h3>
+            <div class="trial__options" role="group" aria-label="Scegli la risposta sul titulus">
+              <button type="button" data-choice="sedizione">Un’accusa di sedizione politica</button>
+              <button type="button" data-choice="bestemmia">Un’accusa di bestemmia religiosa</button>
+              <button type="button" data-choice="nulla">Nulla: era una formula fissa</button>
+            </div>
+            <p class="trial__feedback" hidden></p>
+          </article>
+
+          <article class="trial__q" data-trial="divergenze">
+            <p class="trial__num">Domanda 03</p>
+            <h3>Su quale punto le fonti divergono maggiormente?</h3>
+            <div class="trial__options" role="group" aria-label="Scegli la risposta sulle divergenze">
+              <button type="button" data-choice="cronologia">Cronologia e responsabilità del processo</button>
+              <button type="button" data-choice="crocifissione">Il fatto della crocifissione</button>
+              <button type="button" data-choice="esistenza">L’esistenza di Gesù</button>
+            </div>
+            <p class="trial__feedback" hidden></p>
+          </article>
+        </div>
+
+        <div class="verdict" id="trial-verdict" hidden>
+          <p class="eyebrow">Il verdetto del fascicolo</p>
+          <h3>Le fonti convergono su poco. Quel poco è importante.</h3>
+          <div class="verdict__cols">
+            <div>
+              <h4>Convergono su</h4>
+              <ul>
+                <li>Gesù fu crocifisso sotto Ponzio Pilato.</li>
+                <li>L’accusa aveva una dimensione politica: “Re dei Giudei”.</li>
+                <li>La sua morte fu interpretata dai seguaci come parte di un disegno divino.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Non convergono su</h4>
+              <ul>
+                <li>Il giorno e l’ora esatti.</li>
+                <li>La procedura del processo e il ruolo del Sinedrio.</li>
+                <li>Chi portò la responsabilità principale.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="verdict__note"><strong>Ipotesi storica, non verdetto:</strong> i Vangeli tendono a scaricare Pilato e a caricare le autorità ebraiche. Scrivono dopo il 70, quando il cristianesimo cerca legittimità nell’Impero. La responsabilità storica riguarda élite e istituzioni del I secolo, <strong>non un popolo</strong>.</p>
+        </div>
+
+        <figure class="plate plate--wide reveal">
+          <button class="plate__media" type="button" data-plate="giotto-caifa" data-full="assets/plates/giotto-caifa.webp" aria-label="Ingrandisci la tavola: Gesù davanti a Caifa">
+            <img src="assets/plates/giotto-caifa-640.webp" srcset="assets/plates/giotto-caifa-640.webp 640w, assets/plates/giotto-caifa.webp 1100w" sizes="(max-width: 720px) 100vw, 42vw" width="1100" height="1302" loading="lazy" decoding="async" alt="Affresco con Gesù condotto davanti a Caifa, circondato da figure in abiti sacerdotali.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 07 · Il processo</p>
+            <h3>La scena del processo, costruita dall’arte.</h3>
+            <p>Gesù davanti a Caifa: l’affresco mette in scena il confronto tra Gesù e il sommo sacerdote. I Vangeli divergono su procedura e responsabilità; l’immagine non è un documento giudiziario.</p>
+            <p class="plate__credit">Gesù davanti a Caifa, affresco. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> chi prese la decisione. La scena è un’interpretazione.</p>
+          </figcaption>
+        </figure>
+
+        <div class="callout callout--alert reveal" role="note" aria-label="Avvertenza sull’uso distorto delle fonti">
+          <p class="eyebrow">Contro l’uso distorto delle fonti</p>
+          <p>Per secoli i racconti della Passione sono stati usati per accusare “i giudei” collettivamente. La ricerca storica parla di élite sacerdotali e autorità romane del I secolo, non di un popolo. Riconoscere la polemica antica è parte del lavoro critico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIBATTITO -->
+    <section class="section" id="dibattito" aria-labelledby="dibattito-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">05</p>
+          <div>
+            <p class="eyebrow">Dibattito a bivi</p>
+            <h2 id="dibattito-title">Nessuna risposta fa punti. Conta come la difendi.</h2>
+            <p class="section__lead">Tre dilemmi che dividono storici, credenti e scettici. Scegli una posizione: riceverai il punto forte e il punto debole, non un verdetto.</p>
+          </div>
+        </header>
+        <div class="debate" id="debate"></div>
+        <div class="debate__summary" id="debate-summary" hidden>
+          <p class="eyebrow">Dopo il dibattito</p>
+          <h3>La qualità di un’argomentazione si misura dai suoi limiti, non dalla sua sicurezza.</h3>
+          <p>Hai scelto tre posizioni. Ora prova a scrivere la più forte obiezione alla tua preferita. Se non riesci a formularla, non hai ancora capito l’altra parte.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RITRATTO -->
+    <section class="section section--paper" id="ritratto" aria-labelledby="ritratto-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">06</p>
+          <div>
+            <p class="eyebrow">Laboratorio del ritratto</p>
+            <h2 id="ritratto-title">Ora tocca a te. Chi era Gesù, per le fonti?</h2>
+            <p class="section__lead">Scegli da 3 a 5 tratti. Per ciascuno dichiara quanto lo ritieni documentato. Il risultato non è “la verità”: è un ritratto argomentato, con i suoi limiti.</p>
+          </div>
+        </header>
+
+        <div class="portrait-lab">
+          <div class="portrait-lab__builder">
+            <div class="trait-grid" id="trait-grid" role="group" aria-label="Tratti da selezionare"></div>
+            <p class="trait-note"><strong>Il confine:</strong> la domanda “era Figlio di Dio?” non è una domanda storica: è una confessione di fede. Il fascicolo non la mette ai voti. Puoi studiarla, non dimostrarla con un reperto.</p>
+
+            <div class="self-check reveal">
+              <h3>Prima di fissare il ritratto</h3>
+              <p>Spunta ciò che hai fatto. Non è un punteggio: è una lista di controllo per argomentare meglio.</p>
+              <div class="self-check__list" id="self-check">
+                <label><input type="checkbox" value="fonti"> Ho usato almeno due fonti diverse.</label>
+                <label><input type="checkbox" value="livelli"> Ho distinto fatti, indizi e interpretazioni.</label>
+                <label><input type="checkbox" value="limiti"> Ho detto anche ciò che le fonti non permettono di dire.</label>
+                <label><input type="checkbox" value="alterita"> Ho considerato una posizione diversa dalla mia.</label>
+                <label><input type="checkbox" value="domanda"> Ho lasciato aperta una domanda.</label>
+              </div>
+              <label class="open-question" for="open-question">La domanda che mi resta (facoltativa)</label>
+              <textarea id="open-question" maxlength="400" rows="3" placeholder="Es.: perché i Vangeli scaricano Pilato e caricano il Sinedrio?"></textarea>
+              <p class="open-question__count"><span id="open-question-count">0</span>/400</p>
+            </div>
+          </div>
+
+          <div class="portrait-preview" id="portrait-preview" aria-live="polite">
+            <div class="portrait-preview__head">
+              <p class="eyebrow">Scheda di riconoscimento</p>
+              <span class="stamp stamp--small" id="portrait-stamp" hidden>Fissato</span>
+            </div>
+            <h3 id="portrait-title">Il tuo identikit è vuoto</h3>
+            <p class="portrait-preview__empty" id="portrait-empty">Seleziona almeno 3 tratti per vedere l’anteprima del ritratto. Il testo si aggiorna mentre scegli.</p>
+            <div class="portrait-preview__body" id="portrait-body" hidden></div>
+            <div class="portrait-preview__actions">
+              <button class="btn btn--primary" type="button" id="generate-portrait" disabled>Fissa il ritratto</button>
+              <button class="btn btn--ghost" type="button" id="copy-portrait" disabled>Copia</button>
+              <button class="btn btn--ghost" type="button" id="download-portrait" disabled>Scarica .txt</button>
+              <button class="btn btn--ghost" type="button" id="print-portrait" disabled>Stampa</button>
+            </div>
+            <p class="portrait-preview__disclaimer">Sintesi argomentata, non prova. Il ritratto resta nel tuo browser: nessun dato viene inviato.</p>
+          </div>
+        </div>
+
+        <figure class="plate plate--wide plate--reverse reveal">
+          <button class="plate__media" type="button" data-plate="volto-ricostruito" data-full="assets/plates/volto-ricostruito.webp" aria-label="Ingrandisci la tavola: ricostruzione del volto di un uomo del I secolo">
+            <img src="assets/plates/volto-ricostruito-640.webp" srcset="assets/plates/volto-ricostruito-640.webp 640w, assets/plates/volto-ricostruito.webp 863w" sizes="(max-width: 720px) 100vw, 42vw" width="863" height="1913" loading="lazy" decoding="async" alt="Ricostruzione forense del volto di un uomo del I secolo, con barba e capelli scuri.">
+            <span class="plate__zoom-label" aria-hidden="true">Ingrandisci</span>
+          </button>
+          <figcaption>
+            <p class="plate__num">Tavola 08 · Il volto ricostruito</p>
+            <h3>Ricostruire un volto, non incontrare una persona.</h3>
+            <p>Le ricostruzioni forensi partono da crani del I secolo e da ipotesi su capelli, carnagione, età. Sono modelli plausibili, non ritratti. Le immagini generate dall’IA aggiungono dettagli che le fonti non hanno.</p>
+            <p class="plate__credit">Ricostruzione del volto di un uomo del I secolo. Uso didattico interno.</p>
+            <p class="plate__limit"><strong>Cosa non prova:</strong> l’aspetto reale di Gesù. È un’ipotesi, non un documento.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- AUTOVALUTAZIONE -->
+    <section class="section" id="autovalutazione" aria-labelledby="quiz-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">07</p>
+          <div>
+            <p class="eyebrow">Autovalutazione</p>
+            <h2 id="quiz-title">Hai letto le fonti come uno storico?</h2>
+            <p class="section__lead">Otto domande, feedback immediato, nessun voto. Serve a capire quali passaggi rileggere.</p>
+          </div>
+        </header>
+        <div class="quiz" id="quiz" role="group" aria-labelledby="quiz-title"></div>
+        <div class="quiz__actions">
+          <button class="btn btn--primary" type="button" id="quiz-submit" disabled>Calcola il risultato</button>
+          <button class="btn btn--ghost" type="button" id="quiz-reset">Ricomincia</button>
+          <p class="quiz__status" id="quiz-status" aria-live="polite">0 di 8 risposte</p>
+        </div>
+        <div class="quiz-result" id="quiz-result" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- GLOSSARIO -->
+    <section class="section section--paper" id="glossario" aria-labelledby="glossario-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">08</p>
+          <div>
+            <p class="eyebrow">Glossario</p>
+            <h2 id="glossario-title">Le parole per non perdersi.</h2>
+            <p class="section__lead">Apri un termine per la definizione. Apri almeno cinque voci per acquisire l’indizio “lessico”.</p>
+          </div>
+        </header>
+        <div class="glossary" id="glossary">
+          <details><summary>Esegesi</summary><p>Interpretazione critica di un testo, con attenzione a lingua, contesto, genere letterario e storia della trasmissione.</p></details>
+          <details><summary>Fonte primaria</summary><p>Testo, oggetto o iscrizione prodotta in prossimità dell’evento. Non è automaticamente più vera: anche una fonte primaria ha un autore e un interesse.</p></details>
+          <details><summary>Fonte secondaria</summary><p>Opera che interpreta o rielabora fonti primarie. Questo fascicolo è una fonte secondaria: sintetizza e discute.</p></details>
+          <details><summary>Sinottici</summary><p>Matteo, Marco e Luca, così chiamati perché si possono leggere in parallelo. Le somiglianze suggeriscono dipendenze letterarie.</p></details>
+          <details><summary>Fonte Q</summary><p>Raccolta ipotetica di detti di Gesù usata da Matteo e Luca. Non conservata come manoscritto: è una ricostruzione degli studiosi.</p></details>
+          <details><summary>Canone</summary><p>Elenco dei libri considerati normativi da una comunità religiosa. Il canone cristiano dei 27 libri del Nuovo Testamento si consolida tra II e IV secolo.</p></details>
+          <details><summary>Apocrifo</summary><p>Testo non incluso nel canone. Non significa automaticamente falso o senza valore storico: significa “nascosto” o “non pubblico”.</p></details>
+          <details><summary>Testimonium Flavianum</summary><p>Passo di Giuseppe Flavio su Gesù, tramandato con probabili aggiunte cristiane. Gli studiosi discutono quali parti siano autentiche.</p></details>
+          <details><summary>Escatologia</summary><p>Discorso sulle “cose ultime”: fine della storia, giudizio, risurrezione, trasformazione del mondo. È un linguaggio diffuso nel giudaismo del I secolo.</p></details>
+          <details><summary>Messia</summary><p>Dall’ebraico <em>mashiach</em>, “unto”. Indicava un re o un profeta consacrato; nel I secolo circolavano attese diverse sul Messia.</p></details>
+          <details><summary>Argumentum ex silentio</summary><p>Argomento basato sull’assenza di una menzione. Da solo è debole: il silenzio può dipendere da ignoranza, disinteresse o perdita delle fonti.</p></details>
+          <details><summary>Ossuario</summary><p>Scatola di pietra per raccogliere le ossa dopo la decomposizione, usata in Giudea nel I secolo. Spesso porta il nome del defunto.</p></details>
+          <details><summary>Radiocarbonio</summary><p>Metodo di datazione basato sul decadimento del carbonio-14. Ha margini di errore e richiede calibrazione; non data tutti i materiali.</p></details>
+          <details><summary>Metodo storico-critico</summary><p>Insieme di procedure per ricostruire e interpretare testi antichi senza assumerne l’ispirazione come premessa. Non decide della fede: delinea ciò che è storicamente argomentabile.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCENTE -->
+    <section class="section section--teacher" id="docente" aria-labelledby="docente-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__num">09</p>
+          <div>
+            <p class="eyebrow">Per il docente</p>
+            <h2 id="docente-title">Un’indagine, non una lezione frontale.</h2>
+            <p class="section__lead">La landing è autonoma e non richiede account. Può essere usata in classe, in coppia, a casa o in modalità capovolta.</p>
+          </div>
+        </header>
+
+        <div class="teacher-grid">
+          <details class="teacher-card" open>
+            <summary>Obiettivi e competenze</summary>
+            <ul>
+              <li>Distinguere fonti primarie e secondarie, testi canonici e apocrifi.</li>
+              <li>Riconoscere la differenza tra fatto, indizio e interpretazione.</li>
+              <li>Valutare la forza e i limiti di un reperto archeologico o scientifico.</li>
+              <li>Argomentare un ritratto storico senza trasformarlo in una confessione o in una sentenza.</li>
+              <li>Riconoscere gli usi pubblici e distorti della storia, inclusi gli stereotipi antisemiti.</li>
+            </ul>
+            <p><strong>Competenze chiave:</strong> alfabetica funzionale, storico-critica, digitale critica, sociale e civica.</p>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Struttura e tempi</summary>
+            <ol>
+              <li><strong>Metodo (1 ora):</strong> le quattro regole e il banco di classificazione.</li>
+              <li><strong>Indagine (2 ore):</strong> schede delle fonti, linea del tempo, atlante, laboratorio scientifico.</li>
+              <li><strong>Processo e dibattito (1–2 ore):</strong> tre domande, tre dilemmi, discussione in classe.</li>
+              <li><strong>Ritratto (1 ora):</strong> scelta dei tratti, autovalutazione, esposizione orale o scambio in coppia.</li>
+              <li><strong>Restituzione (30 min):</strong> quiz e domanda aperta finale.</li>
+            </ol>
+            <p>Totale indicativo: 5–6 ore, adattabili. La landing può essere assegnata anche come lavoro domestico.</p>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Rubrica di valutazione</summary>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr><th>Criterio</th><th>In avvio</th><th>Adeguato</th><th>Esperto</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Uso delle fonti</td><td>Cita una fonte senza contestualizzarla.</td><td>Distingue fonti e ne indica data e genere.</td><td>Confronta fonti indipendenti e ne discute i limiti.</td></tr>
+                  <tr><td>Distinzione dei livelli</td><td>Confonde fatti e interpretazioni.</td><td>Riconosce fatto, indizio e interpretazione.</td><td>Spiega perché un’affermazione appartiene a un livello e non a un altro.</td></tr>
+                  <tr><td>Argomentazione</td><td>Afferma senza motivare.</td><td>Motiva con esempi e fonti.</td><td>Argomenta, prevede obiezioni e riconosce i controesempi.</td></tr>
+                  <tr><td>Riflessione critica</td><td>Ripete luoghi comuni.</td><td>Considera più prospettive.</td><td>Problematizza il rapporto tra storia, fede e uso pubblico del passato.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Adattamenti e cura della classe</summary>
+            <ul>
+              <li><strong>BES/DSA:</strong> usare le mappe, i riassunti delle schede e la versione stampabile del ritratto; ridurre il numero di tratti a tre.</li>
+              <li><strong>Classi numerose:</strong> dividere in gruppi “fonti”, “archeologia”, “scienza”, “processo”; ogni gruppo presenta una scheda e una domanda aperta.</li>
+              <li><strong>Discussione sensibile:</strong> non chiedere agli studenti di dichiarare la propria fede. Mantenere il registro storico e ricordare che le fedi hanno letture diverse.</li>
+              <li><strong>Antisemitismo:</strong> spiegare che la polemica dei Vangeli è storica e non autorizza alcuna accusa collettiva contro gli ebrei.</li>
+              <li><strong>Senza dispositivi:</strong> stampare le schede delle fonti e la scheda del ritratto; usare la landing come traccia alla lavagna.</li>
+            </ul>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Domande per la classe</summary>
+            <ol>
+              <li>Che differenza c’è tra “non ci sono prove” e “non è vero”?</li>
+              <li>Perché le fonti cristiane sono più numerose di quelle romane? Che effetto ha sulla nostra percezione?</li>
+              <li>Se un reperto è autentico, dimostra automaticamente l’interpretazione che ne diamo?</li>
+              <li>Perché i Vangeli scaricano Pilato e caricano il Sinedrio? A chi serve questa rappresentazione?</li>
+              <li>Che cosa cambia, per uno storico, tra “Gesù è esistito” e “Gesù è il Figlio di Dio”?</li>
+              <li>Quale domanda del fascicolo vorresti continuare a indagare, e con quali fonti?</li>
+            </ol>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Nota sulle fonti e bibliografia</summary>
+            <p>Questa landing è un materiale didattico autonomo: non sostituisce la lettura delle fonti. Le sintesi sono discusse nella bibliografia essenziale.</p>
+            <ul class="bibliography">
+              <li>C. Augias, M. Pesce, <em>Inchiesta su Gesù</em>, Mondadori, 2006.</li>
+              <li>B. D. Ehrman, <em>Did Jesus Exist? The Historical Argument for Jesus of Nazareth</em>, HarperOne, 2012.</li>
+              <li>E. P. Sanders, <em>The Historical Figure of Jesus</em>, Penguin, 1993.</li>
+              <li>J. P. Meier, <em>A Marginal Jew</em>, Yale University Press, 1991–2016.</li>
+              <li>Flavio Giuseppe, <em>Antichità giudaiche</em>, libro XVIII.</li>
+              <li>Tacito, <em>Annali</em>, XV.44; Plinio il Giovane, <em>Lettere</em>, X.96.</li>
+              <li>P. E. Damon et al., “Radiocarbon dating of the Shroud of Turin”, <em>Nature</em> 337 (1989), pp. 611–615.</li>
+              <li>J. Magness, <em>The Archaeology of the Holy Land</em>, Cambridge University Press, 2012.</li>
+            </ul>
+          </details>
+
+          <details class="teacher-card">
+            <summary>Crediti immagini e uso didattico</summary>
+            <p>Le otto tavole sono immagini artistiche e fotografiche incluse per <strong>uso didattico interno</strong>. I diritti restano dei rispettivi autori. Non ridistribuirle pubblicamente senza autorizzazione.</p>
+            <p>Se la landing diventa pubblica, sostituire le tavole con riproduzioni di pubblico dominio o con licenza aperta. Il dettaglio dei file è in <a href="CREDITS.md">CREDITS.md</a>.</p>
+            <p class="teacher-note">Le didascalie non sono decorative: ogni tavola indica ciò che l’immagine mostra e ciò che <strong>non</strong> può provare.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <p class="footer__kicker">Fine del fascicolo</p>
+        <p class="footer__title">La storia non chiude il caso. Insegna a formulare domande migliori.</p>
+        <p class="footer__note">Materiale didattico per la scuola secondaria di secondo grado. Nessun cookie, nessun tracciamento. I progressi restano nel tuo browser. Le tavole sono incluse per uso didattico interno.</p>
+      </div>
+      <div class="footer__actions">
+        <a class="btn btn--ghost btn--light" href="#top">Torna all’inizio</a>
+        <button class="btn btn--ghost btn--light" type="button" id="reset-progress">Azzera il fascicolo</button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Inchiesta su Gesù · materiale didattico</span>
+      <span>Fonti, metodo, interpretazioni — non una confessione</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="reset-dialog" id="reset-dialog" aria-labelledby="reset-title">
+    <h2 id="reset-title">Azzerare il fascicolo?</h2>
+    <p>Verranno cancellati indizi, tratti scelti, risposte e ritratto salvati in questo browser. L’operazione non si può annullare.</p>
+    <div class="reset-dialog__actions">
+      <button class="btn btn--ghost" type="button" id="reset-cancel">Annulla</button>
+      <button class="btn btn--danger" type="button" id="reset-confirm">Azzera tutto</button>
+    </div>
+  </dialog>
+
+  <dialog class="plate-dialog" id="plate-dialog" aria-labelledby="plate-dialog-title">
+    <button class="plate-dialog__close" type="button" id="plate-dialog-close" aria-label="Chiudi la tavola">×</button>
+    <img id="plate-dialog-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/%3E" alt="" width="1100" height="1374">
+    <div class="plate-dialog__caption">
+      <p class="eyebrow">Tavola</p>
+      <h2 id="plate-dialog-title">Tavola</h2>
+      <p id="plate-dialog-caption"></p>
+      <p class="plate-dialog__credit">Immagini incluse per uso didattico interno. I diritti restano dei rispettivi autori.</p>
+    </div>
+  </dialog>
+
+  <div class="print-sheet" id="print-sheet" aria-hidden="true"></div>
+  <noscript><div class="noscript">Questa landing è interattiva: attiva JavaScript per usare il faldone, il ritratto e l’autovalutazione. I contenuti restano leggibili.</div></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
