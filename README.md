@@ -17,6 +17,13 @@ Landing page autonoma per la scuola secondaria di secondo grado: un’indagine s
 - **Autovalutazione**: 8 domande con feedback e risultato non punitivo.
 - **Glossario** e **sezione docente** con obiettivi, tempi, rubrica, adattamenti e bibliografia.
 
+## Pubblicazione
+
+- Sito: <https://riefolog-cyber.github.io/inchiesta-su-gesu/>
+- Repository: <https://github.com/riefolog-cyber/inchiesta-su-gesu>
+
+Il sito è pubblicato con GitHub Pages dal branch `main`, nella cartella principale.
+
 ## Come aprirla
 
 Non richiede build né dipendenze. Apri `index.html` in un browser oppure servi la cartella:
@@ -43,7 +50,7 @@ I progressi sono salvati solo in `localStorage`; non ci sono cookie, tracker o r
 - [assets/plates](assets/plates) — tavole WebP e varianti responsive.
 - [CREDITS.md](CREDITS.md) — crediti delle immagini e limiti d’uso.
 
-Le tavole sono incluse per uso didattico interno; i diritti restano dei rispettivi autori. Per una pubblicazione aperta vanno sostituite con immagini di pubblico dominio/CC o autorizzate.
+Le tavole sono incluse a scopo didattico; i diritti restano dei rispettivi autori. La pubblicazione online non implica una licenza di riuso: per riusi editoriali o commerciali vanno sostituite con immagini di pubblico dominio/CC o autorizzate.
 
 ## Nota didattica
 

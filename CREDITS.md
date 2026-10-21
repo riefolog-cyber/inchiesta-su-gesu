@@ -1,6 +1,6 @@
 # Crediti delle immagini
 
-Le immagini in `assets/plates/` sono riproduzioni artistiche e fotografiche incluse a scopo didattico. I diritti restano dei rispettivi autori e detentori. Sono incluse **per uso didattico interno**; non sono ridistribuite con licenza aperta.
+Le immagini in `assets/plates/` sono riproduzioni artistiche e fotografiche incluse a scopo didattico. I diritti restano dei rispettivi autori e detentori. Sono incluse **a scopo didattico**; non sono distribuite con licenza aperta.
 
 | Tavola | File | Contenuto |
 |---|---|---|
@@ -15,7 +15,7 @@ Le immagini in `assets/plates/` sono riproduzioni artistiche e fotografiche incl
 
 Ogni file ha una variante `-640.webp` usata da `srcset` per schermi piccoli. Le immagini sono ottimizzate in WebP e le didascalie nella landing spiegano il limite storico di ogni tavola.
 
-## Se la landing diventa pubblica
+## Riuso delle immagini
 
 Sostituire le tavole con:
 
@@ -23,4 +23,4 @@ Sostituire le tavole con:
 - fotografie archeologiche con licenza CC BY/CC BY-SA e attribuzione;
 - materiali autorizzati dai detentori dei diritti.
 
-L’uso didattico interno non equivale a una licenza di pubblicazione.
+La pubblicazione online non equivale a una licenza di riuso: per usi editoriali o commerciali servono le autorizzazioni dei detentori dei diritti.
